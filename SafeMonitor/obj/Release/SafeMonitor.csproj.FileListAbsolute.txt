@@ -1,0 +1,7 @@
+D:\DotNETFramework\Delegation_ScreenCapture\DelegationProject\Release\SafeMonitor.exe.config
+D:\DotNETFramework\Delegation_ScreenCapture\DelegationProject\Release\SafeMonitor.exe
+D:\DotNETFramework\Delegation_ScreenCapture\DelegationProject\Release\SafeMonitor.pdb
+D:\DotNETFramework\Delegation_ScreenCapture\DelegationProject\SafeMonitor\obj\Release\SafeMonitor.ProjectInstaller.resources
+D:\DotNETFramework\Delegation_ScreenCapture\DelegationProject\SafeMonitor\obj\Release\SafeMonitor.csproj.GenerateResource.Cache
+D:\DotNETFramework\Delegation_ScreenCapture\DelegationProject\SafeMonitor\obj\Release\SafeMonitor.exe
+D:\DotNETFramework\Delegation_ScreenCapture\DelegationProject\SafeMonitor\obj\Release\SafeMonitor.pdb

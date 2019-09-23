@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<Product Id="*" Name="SafeInstaller" Language="1033" Version="1.0.0.0" Manufacturer="DD" UpgradeCode="5887e49a-091b-4313-b609-155d2eff2c7f">
+		<Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" InstallPrivileges="elevated" AdminImage="yes"  />
+    
+    <Condition Message="Versions of Windows earlier than Windows 2000 are not supported by this software.">
+      <![CDATA[VersionNT >= 500]]>
+    </Condition>
+    
+		<MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+		<MediaTemplate />
+    
+    <Directory Id="TARGETDIR" Name="SourceDir">
+      <Directory Id="ProgramFilesFolder">
+        <Directory Id="INSTALLFOLDER" Name="SafeInstaller" />
+      </Directory>
+    </Directory>
+
+    <DirectoryRef Id="INSTALLFOLDER">
+      <Component Id="SafeMonitor.exe" Guid="*">
+        <File Id="SafeMonitor.exe" Source="$(var.SafeMonitor.TargetDir)SafeMonitor.exe"></File>
+      </Component>
+      <Component Id="StartService.exe" Guid="*">
+        <File Id="StartService.exe" Source="$(var.StartService.TargetDir)StartService.exe"></File>
+      </Component>
+      <Component Id="LuanchApp.exe" Guid="*">
+        <File Id="LuanchApp.exe" Source="$(var.LuanchApp.TargetDir)LuanchApp.exe"></File>
+      </Component>
+      <Component Id="InstallUtil.exe" Guid="*">
+        <File Id="InstallUtil.exe" Source="InstallUtil.exe"></File>
+      </Component>
+    </DirectoryRef>
+    <Feature Id="MainApplication" Title="Main Application" Level="1">
+      <ComponentRef Id="LuanchApp.exe" />
+      <ComponentRef Id="InstallUtil.exe" />
+      <ComponentRef Id="SafeMonitor.exe" />
+      <ComponentRef Id="StartService.exe" />      
+    </Feature>
+ 
+    <CustomAction Id='LaunchApplication' Directory='INSTALLFOLDER' Execute='deferred' Impersonate='no' ExeCommand='"[INSTALLFOLDER]LuanchApp.exe"' Return='check' />    
+    <InstallExecuteSequence>
+      <Custom Action='LaunchApplication' Before='InstallFinalize'/>      
+    </InstallExecuteSequence>
+    
+	</Product>
+
+</Wix>
