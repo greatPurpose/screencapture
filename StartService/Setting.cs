@@ -9,6 +9,6 @@ namespace StartService
     public class Setting
     {
         public static string mointorname = "SafeMonitor";
-        public static int interval = 5000; //mi-sec;
+        public static int interval = 60 * 1000; //mi-sec;
     }
 }

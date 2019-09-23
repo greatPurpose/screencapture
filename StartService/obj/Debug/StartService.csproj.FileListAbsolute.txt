@@ -1,8 +1,10 @@
 D:\DotNETFramework\Delegation_ScreenCapture\DelegationProject\StartService\bin\Debug\StartService.exe.config
 D:\DotNETFramework\Delegation_ScreenCapture\DelegationProject\StartService\bin\Debug\StartService.exe
 D:\DotNETFramework\Delegation_ScreenCapture\DelegationProject\StartService\bin\Debug\StartService.pdb
-D:\DotNETFramework\Delegation_ScreenCapture\DelegationProject\StartService\obj\Debug\StartService.csprojResolveAssemblyReference.cache
 D:\DotNETFramework\Delegation_ScreenCapture\DelegationProject\StartService\obj\Debug\StartService.ProjectInstaller.resources
 D:\DotNETFramework\Delegation_ScreenCapture\DelegationProject\StartService\obj\Debug\StartService.csproj.GenerateResource.Cache
 D:\DotNETFramework\Delegation_ScreenCapture\DelegationProject\StartService\obj\Debug\StartService.exe
 D:\DotNETFramework\Delegation_ScreenCapture\DelegationProject\StartService\obj\Debug\StartService.pdb
+D:\DotNETFramework\Delegation_ScreenCapture\DelegationProject\Debug\StartService.exe.config
+D:\DotNETFramework\Delegation_ScreenCapture\DelegationProject\Debug\StartService.exe
+D:\DotNETFramework\Delegation_ScreenCapture\DelegationProject\Debug\StartService.pdb

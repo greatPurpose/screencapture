@@ -22,7 +22,7 @@ namespace StartService
                 {
                     new Service1()
                 };
-                ServiceBase.Run(ServicesToRun);
+                ServiceBase.Run(ServicesToRun);             
             }             
         }
     }

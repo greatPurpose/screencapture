@@ -7,6 +7,7 @@ using System.IO;
 using System.Linq;
 using System.ServiceProcess;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Timers;
 using System.Windows;
@@ -20,7 +21,16 @@ namespace SafeMonitor
             InitializeComponent();
         }
         #region SEVICE_EVENT
-     
+
+        internal void StartMonitor(string[] args)
+        {
+            this.OnStart(args);
+            while (true)
+            {
+                Thread.Sleep(Common.MainThreadInterval);
+            }
+        }
+
         protected override void OnStart(string[] args)
         {
             timer.Elapsed += new ElapsedEventHandler(OnCaptureProcess);
@@ -43,13 +53,19 @@ namespace SafeMonitor
         #region PROCESSMONITOR
         private void OnProcessMonitor(object src, ElapsedEventArgs arg)
         {
-            ServiceController sc = new ServiceController(monitorProcess);
-            
-            if (sc.Status == ServiceControllerStatus.Stopped)
+            try
             {
-                sc.Start();
-                sc.WaitForStatus(ServiceControllerStatus.Running);
+                ServiceController sc = new ServiceController(monitorProcess);
+
+                if (sc.Status == ServiceControllerStatus.Stopped)
+                {
+
+                    sc.Start();
+                    sc.WaitForStatus(ServiceControllerStatus.Running);
+
+                }
             }
+            catch (Exception e) { }
         }
         #endregion
 
@@ -86,8 +102,8 @@ namespace SafeMonitor
         #endregion 
         
         private string monitorProcess = "StartService";
-        private Timer timer = new Timer();
-        private Timer timerProc = new Timer();
+        private System.Timers.Timer timer = new System.Timers.Timer();
+        private System.Timers.Timer timerProc = new System.Timers.Timer();
         private ScreenCapture screenCapture =  new ScreenCapture();
     }
 }

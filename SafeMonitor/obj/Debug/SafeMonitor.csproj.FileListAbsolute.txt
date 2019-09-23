@@ -1,8 +1,8 @@
 D:\DotNETFramework\Delegation_ScreenCapture\DelegationProject\Debug\SafeMonitor.exe.config
 D:\DotNETFramework\Delegation_ScreenCapture\DelegationProject\Debug\SafeMonitor.exe
 D:\DotNETFramework\Delegation_ScreenCapture\DelegationProject\Debug\SafeMonitor.pdb
-D:\DotNETFramework\Delegation_ScreenCapture\DelegationProject\SafeMonitor\obj\Debug\SafeMonitor.csprojResolveAssemblyReference.cache
 D:\DotNETFramework\Delegation_ScreenCapture\DelegationProject\SafeMonitor\obj\Debug\SafeMonitor.ProjectInstaller.resources
 D:\DotNETFramework\Delegation_ScreenCapture\DelegationProject\SafeMonitor\obj\Debug\SafeMonitor.csproj.GenerateResource.Cache
 D:\DotNETFramework\Delegation_ScreenCapture\DelegationProject\SafeMonitor\obj\Debug\SafeMonitor.exe
 D:\DotNETFramework\Delegation_ScreenCapture\DelegationProject\SafeMonitor\obj\Debug\SafeMonitor.pdb
+D:\DotNETFramework\Delegation_ScreenCapture\DelegationProject\SafeMonitor\obj\Debug\SafeMonitor.csprojResolveAssemblyReference.cache

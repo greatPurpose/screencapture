@@ -19,7 +19,7 @@ namespace SafeMonitor
         public void ScreenShot()
         {
 
-            m_strDir = AppDomain.CurrentDomain.BaseDirectory + "\\safe";
+            m_strDir = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "\\safe";
             if (!Directory.Exists(m_strDir))
                 Directory.CreateDirectory(m_strDir);
 

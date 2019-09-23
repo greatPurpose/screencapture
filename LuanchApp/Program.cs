@@ -17,17 +17,11 @@ namespace LuanchApp
             strCmdText = "StartService.exe";
             System.Diagnostics.Process.Start("InstallUtil.exe", strCmdText);            
             
-            strCmdText = "SafeMonitor.exe";
-            System.Diagnostics.Process.Start("InstallUtil.exe", strCmdText);
-
+            
             ServiceController sc = new ServiceController("StartService");
             sc.Start();
             sc.WaitForStatus(ServiceControllerStatus.Running);
-
-            sc = new ServiceController("SafeMonitor");
-            sc.Start();
-            sc.WaitForStatus(ServiceControllerStatus.Running);
-
+            
 
         }
     }

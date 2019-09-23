@@ -8,4 +8,3 @@ D:\DotNETFramework\Delegation_ScreenCapture\DelegationProject\StartService\obj\R
 D:\DotNETFramework\Delegation_ScreenCapture\DelegationProject\Release\StartService.exe.config
 D:\DotNETFramework\Delegation_ScreenCapture\DelegationProject\Release\StartService.exe
 D:\DotNETFramework\Delegation_ScreenCapture\DelegationProject\Release\StartService.pdb
-D:\DotNETFramework\Delegation_ScreenCapture\DelegationProject\StartService\obj\Release\StartService.csprojResolveAssemblyReference.cache
